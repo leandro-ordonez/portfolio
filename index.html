@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio website for Leandro Ordonez."
+    />
+    <title>Leandro Ordonez | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#home" aria-label="Go to home">LO<span>.</span></a>
+
+      <button class="menu-button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="nav-contact">Let's talk</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero container">
+        <p class="eyebrow">LEARNING, BUILDING, GROWING</p>
+        <h1>Hi, I'm <span>Leandro</span>.<br />Learning to build for the web.</h1>
+        <p class="hero-copy">
+          I’m Leandro, a begginer learning web development and programming. I’m
+          building a strong foundation, creating projects, and preparing for
+          remote opportunities in tech.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Check out my work <span>↓</span></a>
+          <a class="button button-ghost" href="#contact">Contact me</a>
+        </div>
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+      </section>
+
+      <section id="about" class="about container section">
+        <div class="section label"><span>01</span> About me</div>
+        <div class="about-content">
+          <h2>Building my future<br />with technology</h2>
+          <div>
+            <p>
+              I’m Leandro Ordonez, a beginner learning web development and
+              programming. I’m interested in how technology can turn an idea
+              into something useful, accessible, and easy to use.
+            </p>
+            <p>
+              Right now, I’m focused on learning the fundamentals, practicing
+              consistently, and building a portfolio that shows my growth. My
+              goal is to earn a remote role where I can contribute, keep
+              learning, and build a long-term career in tech.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills container section">
+        <div class="section-label"><span>02</span> Skills</div>
+        <div class="skill-grid">
+          <article class="skill-card"><span class="skill-number">01</span><h3>Web foundations</h3><p>Learning how websites are structured, styled, and made responsive with HTML and CSS.</p></article>
+          <article class="skill-card"><span class="skill-number">02</span><h3>Programming</h3><p>Learning programming concepts and JavaScript through hands-on practice and small projects.</p></article>
+          <article class="skill-card"><span class="skill-number">03</span><h3>Growth mindset</h3><p>Consistent practice, problem solving, and a willingness to learn from feedback and new challenges.</p></article>
+        </div>
+      </section>
+
+      <section id="projects" class="projects container section">
+        <div class="section-label"><span>03</span> Projects</div>
+        <div class="project-list">
+          <article class="project-card project-featured">
+            <div class="project-visual gradient-one"><span>01</span><div class="mock-window"><i></i><i></i><i></i><b></b><b></b><b></b></div></div>
+            <div class="project-details"><p class="project-type">IN PROGRESS</p><h3>Personal Portfolio</h3><p>This responsive portfolio is part of my learning journey. I’m using it to practice presenting myself and my work clearly online.</p><a href="#home" aria-label="View Personal Portfolio project">View site ↗</a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual gradient-two"><span>02</span><div class="phone-mock"></div></div>
+            <div class="project-details"><p class="project-type">NEXT PROJECT</p><h3>JavaScript Practice</h3><p>I’m building small JavaScript projects to strengthen my understanding of programming, logic, and interactive web experiences.</p><a href="#contact" aria-label="Contact Leandro about upcoming projects">Follow my progress ↗</a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual gradient-three"><span>03</span><div class="poster-mock">KEEP<br />LEARNING<br /><em>EVERY DAY</em></div></div>
+            <div class="project-details"><p class="project-type">ON THE ROADMAP</p><h3>More Projects Ahead</h3><p>As I learn, I’ll add practical projects here that show what I can build and the problems I’m learning to solve.</p><a href="#contact" aria-label="Contact Leandro">Let's connect ↗</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div class="container">
+          <p class="eyebrow">OPEN TO REMOTE OPPORTUNITIES</p>
+          <h2>Let's make something<br /><span>great together.</span></h2>
+          <p class="hero-copy">I’m looking to learn from real-world work, collaborate with great people, and take the next step in my tech career.</p>
+          <p class="email-link">Professional contact details coming soon <span>↗</span></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> Leandro Ordonez. Built while learning.</p>
+      <div><a href="#contact">Connect with me</a><a href="#projects">My projects</a></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
